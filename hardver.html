@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Részletes hardver információk.">
+    <title>Részletes Hardver Ismertető</title>
+    <style>
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hardware-info {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hardver alapok</h1>
+    </header>
+    <nav>
+        <a href="Főoldal.html">Főoldal</a>
+        <a href="hardver.html">Hardverek</a>
+        <a href="robotika.html">Robotika</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+    </nav>
+    <section>
+
+        <div class="hardware-info">
+            <h2>Processzorok (CPU - Central Processing Unit)</h2>
+            <p>A processzor, más néven CPU, a számítógép „agya”. Ez végzi az összes számítást és koordinálja a különböző
+                feladatokat, például programok futtatását, adatok feldolgozását és az eszközök irányítását. Egy CPU több
+                maggal (core) is rendelkezhet, amelyek különböző feladatokat tudnak párhuzamosan elvégezni. A modern
+                processzorok, mint például az **Intel Core i9** vagy az **AMD Ryzen 9**, akár 16 vagy több maggal is
+                rendelkeznek, ami nagyobb teljesítményt nyújt játékokhoz, videószerkesztéshez vagy 3D tervezéshez.</p>
+            <p>A CPU két legfontosabb mutatója a **órajel (GHz)**, amely azt jelzi, milyen gyorsan tud dolgozni, és a
+                **magok száma**, ami a párhuzamos feladatok kezelését mutatja. Egy többmagos processzor hatékonyabb a
+                multitaskingban (pl. böngészés, zenehallgatás és videószerkesztés egyszerre), míg a magas órajellel
+                rendelkező processzorok inkább egyetlen feladatot tudnak gyorsabban végrehajtani.</p>
+            <img src="cpu-4393376_1920.jpg" alt="Processzor">
+        </div>
+
+        <div class="hardware-info">
+            <h2>Videókártyák (GPU - Graphics Processing Unit)</h2>
+            <p>A videókártya a képek, videók és játékok megjelenítéséért felelős. Ez különösen fontos a játékosok és a
+                grafikus tervezők számára, mert a modern játékok és grafikai programok sok számítást igényelnek. A GPU
+                több ezer kis magot tartalmaz, amelyek egyszerre tudnak komplex képi számításokat végezni. Az olyan
+                kártyák, mint az **NVIDIA GeForce RTX 4090** vagy az **AMD Radeon RX 7900**, képesek valós idejű 3D
+                grafikák megjelenítésére, ray tracing támogatással, amely a fény és árnyékok valósághű visszaadását
+                teszi lehetővé.</p>
+            <p>A videókártyák memóriával (VRAM) is rendelkeznek, amely a grafikai adatok ideiglenes tárolására szolgál.
+                A több VRAM-mal rendelkező kártyák jobban teljesítenek nagy felbontású játékok és videók esetén.
+                Általában 8 GB VRAM már elegendő a legtöbb játékhoz, de a 4K játékokhoz és professzionális grafikai
+                munkákhoz akár 12-24 GB VRAM is hasznos lehet.</p>
+            <img src="csm_20190319_2556-e1553269104382.jpg" alt="Videókártya">
+        </div>
+
+        <div class="hardware-info">
+            <h2>Alaplapok (Motherboard)</h2>
+
+            <p>Az alaplap a számítógép központi összekötő eleme, amely lehetővé teszi, hogy a különböző alkatrészek (pl.
+                processzor, memória, tárhely, videókártya) együttműködjenek. Az alaplap típusa meghatározza, milyen
+                komponensek csatlakoztathatók hozzá, például milyen típusú és sebességű processzor, memória, valamint a
+                bővítőhelyek számát, mint a PCIe slotok a videókártyák számára.</p>
+            <p>Modern alaplapok támogatják az **M.2** csatlakozókat, amelyek lehetővé teszik a gyors SSD-k használatát,
+                valamint a **USB-C** portokat, amelyeket az újabb eszközökhöz csatlakoztathatunk. Az alaplapokhoz
+                általában BIOS vagy UEFI is tartozik, ami egy egyszerű szoftver, ami lehetővé teszi a hardverbeállítások
+                módosítását, mint például a ventilátor sebességét vagy a CPU túlhajtását (overclocking).</p>
+            <img src="Asus-ROG-STRIX-Z490-E-GAMING-ATX-alaplap-61582D.jpg" alt="Alaplap">
+        </div>
+
+        <div class="hardware-info">
+            <h2>Memória (RAM - Random Access Memory)</h2>
+
+            <p>A RAM egy gyors, rövid távú memória, amely a futó programokat és adatokat tárolja. Amikor megnyitsz egy
+                programot vagy fájlt, az ideiglenesen a RAM-ba kerül, hogy gyorsan hozzáférhető legyen. Minél több RAM
+                van a számítógépedben, annál több programot tudsz egyszerre futtatni anélkül, hogy a gép lassulna.</p>
+            <p>**8 GB RAM** általában elegendő a hétköznapi használatra, mint a böngészés vagy irodai feladatok. Azonban
+                játékosoknak és videószerkesztőknek érdemes legalább **16 GB** vagy akár **32 GB RAM-ot** használni,
+                hogy a nagyobb igényű programok is zökkenőmentesen fussanak.</p>
+            <img src="ktc-opengraph-blog-gaming-the-ultimate-ram-guide-for-gamers.jpg" alt="RAM modul">
+        </div>
+
+        <div class="hardware-info">
+            <h2>Tárhely: SSD és HDD</h2>
+
+            <p>A tárhely két fő típusa van: a hagyományos **HDD** (merevlemez) és a modern **SSD**
+                (szilárdtest-meghajtó). A HDD egy mechanikus meghajtó, amely mágneses lemezekre írja az adatokat.
+                Előnye, hogy olcsóbb, de lassabb, mint az SSD. Az SSD viszont gyorsabb, mert nem tartalmaz mozgó
+                alkatrészeket, és sokkal gyorsabban hozzáfér az adatokhoz, például a rendszerindítás vagy fájlok
+                megnyitása során.</p>
+            <p>Ha a sebesség a fontos, például gyors rendszerindítást és programbetöltést szeretnél, akkor érdemes egy
+                **500 GB vagy 1 TB SSD-t** választani az operációs rendszerhez és a leggyakrabban használt programokhoz.
+                Adattároláshoz, mint például filmek és képek, a nagyobb kapacitású **HDD** (pl. 2-4 TB) a jobb
+                választás, mert költséghatékonyabb.</p>
+            <img src="ssd_pelda.jpg" alt="SSD">
+            <img src="hard_drive.jpg" alt="HDD">
+        </div>
+
+        <div class="hardware-info">
+            <h2>Tápegység (PSU - Power Supply Unit)</h2>
+            
+                <p>A tápegység (PSU, azaz Power Supply Unit) egy olyan eszköz, amely a számítógép vagy más elektronikai
+                    berendezés számára biztosítja a megfelelő feszültséget és áramot. Az áramforrásból érkező váltakozó
+                    áramot (AC) alakítja át olyan egyenárammá (DC), amelyre a számítógép alkatrészeinek (pl. alaplap,
+                    CPU, GPU, merevlemez stb.) szüksége.</p>
+                    <img src="corsair-cx750f-rgb-80-plus-bronze-atx-modularis-tapegyseg-750w-cp-9020218-eu_original.jpg" alt="Tápegység">
+        </div>            
